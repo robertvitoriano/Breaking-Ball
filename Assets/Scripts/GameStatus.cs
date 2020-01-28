@@ -28,26 +28,33 @@ public class GameStatus : MonoBehaviour
         }
 
     }
-
-
-
     
-   
 
+ 
 
 
     // Update is called once per frame
     void Update()
     {
         Time.timeScale = gameSpeed;
+    
+      
+        
 
         
     }
+   
+
 
      public void AddToScore()
     {
         currentScore += pointsPerBlock;
         scoreText.text = currentScore.ToString();
+    }
+
+    public void resetGame()
+    {
+        Destroy(gameObject);
     }
    
 }

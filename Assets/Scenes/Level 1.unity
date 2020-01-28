@@ -2386,6 +2386,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 328107733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1486336605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4500413634156767168, guid: 1fdb33d97f1ead540a269e29ff381544,
+    type: 3}
+  m_PrefabInstance: {fileID: 1925834100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd309fa7434d4a74d844bb59ea5f3b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1497325556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3199,11 +3211,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Status
       objectReference: {fileID: 0}
-    - target: {fileID: 468233732384383678, guid: 5531f634fad37a249a0d601a0ac7ca78,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 468233732384383679, guid: 5531f634fad37a249a0d601a0ac7ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3264,6 +3271,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4249906455208792864, guid: 5531f634fad37a249a0d601a0ac7ca78,
+        type: 3}
+      propertyPath: loseCollider
+      value: 
+      objectReference: {fileID: 1486336605}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5531f634fad37a249a0d601a0ac7ca78, type: 3}
 --- !u!1001 &1127721207054099587

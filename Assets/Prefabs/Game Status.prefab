@@ -48,7 +48,6 @@ MonoBehaviour:
   pointsPerBlock: 2
   currentScore: 0
   scoreText: {fileID: 6732880622795431397}
-  instance: {fileID: 0}
 --- !u!1001 &3679014884718706353
 PrefabInstance:
   m_ObjectHideFlags: 0
