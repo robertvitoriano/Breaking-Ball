@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
+    
 
     public void Start()
     {
@@ -15,11 +16,15 @@ public class LoseCollider : MonoBehaviour
     {
        
         SceneManager.LoadScene(4);
-
-
-        // TENTANDO ZERAR PLACAR
       
 
+        // TENTANDO ZERAR PLACAR
+
+
+
+    }
+    public void update()
+    {
 
     }
 

@@ -9,13 +9,14 @@ public class GameStatus : MonoBehaviour
     [SerializeField] public int pointsPerBlock =  2;
     [SerializeField]  public int currentScore = 0;
     [SerializeField] TextMeshProUGUI scoreText;
-    public static bool scoreLoaded = false;
+   GameStatus scoreLoaded = null;
+
 
     private void Awake()
     {
-        if (!scoreLoaded)
+        if (scoreLoaded==null)
         {
-            scoreLoaded = true;
+            scoreLoaded = FindObjectOfType<GameStatus>();
 
             DontDestroyOnLoad(gameObject);
         }
@@ -37,7 +38,8 @@ public class GameStatus : MonoBehaviour
     void Update()
     {
         Time.timeScale = gameSpeed;
-    
+      
+
       
         
 
