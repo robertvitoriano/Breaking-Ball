@@ -57,6 +57,7 @@ public class GameStatus : MonoBehaviour
     public void resetGame()
     {
         Destroy(gameObject);
+        currentScore = 0;
     }
    
 }

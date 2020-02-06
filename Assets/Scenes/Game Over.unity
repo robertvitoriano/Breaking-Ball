@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -151,6 +152,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -207,11 +209,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8454911292934848774, guid: 43572d0372a37634f815e39c16a40fca,
-        type: 3}
-      propertyPath: m_Name
-      value: Scene Loader
-      objectReference: {fileID: 0}
     - target: {fileID: 8454911292934848772, guid: 43572d0372a37634f815e39c16a40fca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -266,6 +263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454911292934848774, guid: 43572d0372a37634f815e39c16a40fca,
+        type: 3}
+      propertyPath: m_Name
+      value: Scene Loader
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43572d0372a37634f815e39c16a40fca, type: 3}
@@ -516,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 402}
+  m_AnchoredPosition: {x: 35, y: 216}
   m_SizeDelta: {x: 1447.4, y: 192.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031102649
@@ -867,7 +869,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280295565
+    rgba: 4280361358
   m_fontColor: {r: 0.5566038, g: 0.128649, b: 0.128649, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

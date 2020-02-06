@@ -8,6 +8,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip BreakingSound;
+    [SerializeField] GameObject BlockSparkles;
    
 
     // Fazendo referencia ao GameObject
@@ -32,6 +33,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(tag=="breakable")
         DestroyBlock();
 
 
@@ -45,7 +47,14 @@ public class Block : MonoBehaviour
         AudioSource.PlayClipAtPoint(BreakingSound, Camera.main.transform.position);
         Destroy(gameObject);
         level.BlockDestroyed();
+        TriggerSparklesVFX();
 
+    }
+    private void TriggerSparklesVFX()
+    {
+        GameObject sparrkles = Instantiate(BlockSparkles,transform.position,transform.rotation);
+        Destroy(sparrkles, 1f);
+        
     }
 
 }
